@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class SearchWidget extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.handleClick = this.handleClick.bind(this);
+    console.dir(this.props);
   }
 
   onSearchTermChange(term) {

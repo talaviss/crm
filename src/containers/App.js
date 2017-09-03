@@ -6,7 +6,7 @@ import Menu, {SubMenu, MenuItem} from 'rc-menu';
 import LeftPanel from '../components/LeftPanel';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-//import logo from './logo.svg';
+import * as CustomerActions from '../actions/CustomerActions';
 
 import '../App.css';
 
@@ -30,11 +30,13 @@ class App extends Component {
 
 
   render() {
-    //this.handleSelect(null);
+    console.log('render');
+console.dir(this.props);
+
     return (
       <div className="App">
 
-        <Header />
+        <Header {...this.props} />
 
         <div className="menucrm">
           <Menu onSelect={this.handleSelect}
@@ -75,20 +77,20 @@ class App extends Component {
 
 function mapStateToProps(state) {
   return {
-  /*  images: state.images.data,
-    searchText: state.searchText,
-    modalIsOpen: state.modal.modalIsOpen,
-    selectedImage: state.modal.selectedImage,
-    history: state.history.data*/
+
+    searchText: state.searchText
   };
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-  /*  actions: bindActionCreators(ImagesActions, dispatch),
+  console.log('mapDispatchToProps');
+  var aaa=  {
+    actions: bindActionCreators(CustomerActions, dispatch) /*
     modalActions: bindActionCreators(ModalActions, dispatch),
     historyActions: bindActionCreators(HistoryActions, dispatch)*/
   };
+  console.dir(aaa);
+  return aaa;
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,11 +1,13 @@
 import React from 'react';
-import CreateNew from './CreateNew';
+import LeftPanelItem from './LeftPanelItem';
 const LeftPanel = () => (
   <div className="leftpanel">
-    <CreateNew/>
-    <CreateNew/>
-    <CreateNew/>
-    <CreateNew/>
+    <LeftPanelItem showArrow="true" headerLabel="Create New ..."/>
+    <LeftPanelItem headerLabel="Shortcut"/>
+    <LeftPanelItem headerLabel="Recent Items"/>
+    <LeftPanelItem headerLabel="Custom Links"/>
+    <LeftPanelItem headerLabel="Messages and Alerts"/>
+
   </div>
 );
 

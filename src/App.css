@@ -2,18 +2,24 @@
   text-align: center;
 }
 
-.createNewHeader {
+.leftPanelItemHeader {
   background-color: #0C8CBB;
-  width: 150px;
+  width: 200px;
   color: white;
   border: 2px solid;
   border-radius: 5px;
   text-align: left;
 }
 
-.createNewHeader span {
+.leftPanelItemHeader span {
   margin-left: 10px;
 }
+
+.arrowItem {
+  float: right;
+  margin-right: 10px;
+}
+
 
 .search {
   margin-top: 80px;
