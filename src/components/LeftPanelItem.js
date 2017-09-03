@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Button } from 'reactstrap';
 
-const CreateNew = (props) => (
+const LeftPanelItem = (props) => (
   <div id="createNew">
 
      <div className="leftPanelItemHeader">
@@ -15,4 +15,4 @@ const CreateNew = (props) => (
   </div>
 );
 
-export default CreateNew;
+export default LeftPanelItem;

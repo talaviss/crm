@@ -13,6 +13,7 @@ class SearchWidget extends React.Component {
   }
 
   handleClick() {
+    console.log("youve clicked search");
     this.props.onClickSearch();
   }
 

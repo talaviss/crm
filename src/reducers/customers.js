@@ -4,7 +4,7 @@ const initialState = {
   data: []
 };
 
-export default function images(state = initialState, action) {
+export default function customers(state = initialState, action) {
   switch (action.type) {
   case REQUEST_CUSTOMER_DATA_RECEIVED:
     return {
