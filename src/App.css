@@ -4,7 +4,7 @@
 
 .leftPanelItemHeader {
   background-color: #0C8CBB;
-  width: 200px;
+
   color: white;
   border: 2px solid;
   border-radius: 5px;
@@ -93,8 +93,18 @@
 
 
 .leftpanel {
-  float:left;
+  display: inline-block;
+  width: 10%;
+    vertical-align: top;
 }
+
+.main {
+  display: inline-block;
+  width: 90%;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -342,4 +352,10 @@
     opacity: 0;
     transform: scale(0, 0);
   }
+}
+
+.sectionPart {
+
+
+   text-align: left;
 }

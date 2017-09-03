@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Button } from 'reactstrap';
+
 
 const LeftPanelItem = (props) => (
   <div id="createNew">

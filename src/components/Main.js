@@ -1,13 +1,20 @@
 import React from 'react';
-//import { Button } from 'reactstrap';
 
-const Main = (props) => (
-  <div>
-      <h1>Welcome {props.fullname}</h1>
+import ContactDetail  from './contact/ContactDetails';
+class Main extends React.Component {
+
+  render() {
+
+    return (
+      <div className="main">
+
+          <ContactDetail customer={this.props.customer} />
 
 
+      </div>
+    );
+  }
+}
 
-  </div>
-);
 
 export default Main;

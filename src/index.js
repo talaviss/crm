@@ -6,6 +6,7 @@ import App from './containers/App';
 import configureStore from './store/configureStore';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
+//import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const store = configureStore();
 ReactDOM.render(

@@ -26,10 +26,11 @@ class App extends Component {
             <Header {...this.props} />
 
             <TopNav />
+            <div>
+              <LeftPanel />
 
-            <LeftPanel />
-
-            <Main customer={this.props.customers} />
+              <Main customer={this.props.customers} />
+            </div>
             <Footer />
 
           </div>
