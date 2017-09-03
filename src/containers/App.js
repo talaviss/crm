@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
 import Menu, {SubMenu, MenuItem} from 'rc-menu';
-import LeftPanel from './components/LeftPanel';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import LeftPanel from '../components/LeftPanel';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 //import logo from './logo.svg';
 
-import './App.css';
+import '../App.css';
 
 class App extends Component {
   constructor(props) {
@@ -70,4 +73,22 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+  /*  images: state.images.data,
+    searchText: state.searchText,
+    modalIsOpen: state.modal.modalIsOpen,
+    selectedImage: state.modal.selectedImage,
+    history: state.history.data*/
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+  /*  actions: bindActionCreators(ImagesActions, dispatch),
+    modalActions: bindActionCreators(ModalActions, dispatch),
+    historyActions: bindActionCreators(HistoryActions, dispatch)*/
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
